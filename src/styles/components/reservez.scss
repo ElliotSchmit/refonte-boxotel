@@ -1,0 +1,10 @@
+.reservez .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-sm);
+    align-items: center;
+
+    @media (width < $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+}

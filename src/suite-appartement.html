@@ -1,0 +1,226 @@
+{% include "_partials/_header.html" %}
+
+<section class="hero hero__chambre">
+    <div class="wrapper">
+        <h1 class="hero__content hero__chambre__content">Suite-appartement</h1>
+    </div>
+    <img src="assets/images/hero-suite.jpg" alt="Suite Appartement" class="hero__media chambre__media" />
+</section>
+
+<section class="section chambre">
+    <div class="wrapper">
+        <div class="chambre__grid">
+            <div class="chambre__content">
+                <h3 data-scrolly="fromLeft">Informations supplémentaires</h3>
+
+                <div class="chambre__details" data-scrolly="fromLeft">
+                    <div class="detail">
+                        <p class="bold">Dimensions</p>
+                        <p>2 étages de 530 pi2 (50 m2)</p>
+                    </div>
+                    <div class="detail">
+                        <p class="bold">Capacité d'accueil</p>
+                        <p>2 personnes</p>
+                    </div>
+                    <div class="detail">
+                        <p class="bold">Type de lit</p>
+                        <p>1 très grand lit</p>
+                    </div>
+                </div>
+
+                <div class="chambre__infos tiroir-card" data-scrolly="fromLeft" data-component="Accordeon">
+                    <div class="info js-accordeon">
+                        <div class="infos__title">
+                            <h4>Général</h4>
+                            <svg class="icon icon--lg">
+                                <use href="#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+
+                        <div class="infos__content">
+                            <p>Couette et oreillers en carbone de Bambou anallergique et draps 100% cotton</p>
+                            <p>1 téléviseur à écran plat de 49 po avec cablodistribution</p>
+                            <p>Wi-Fi gratuit</p>
+                            <p>Appels locaux gratuits</p>
+                            <p>Terrasse privée meublée avec BBQ</p>
+                        </div>
+                    </div>
+
+                    <div class="info info-line js-accordeon">
+                        <div class="infos__title">
+                            <h4>Cuisine</h4>
+                            <svg class="icon icon--lg">
+                                <use href="#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+                        <div class="infos__content">
+                            <p>Cuisine complète avec plaque de cuisson, four encastré, four micro-ondes, réfrigérateur, congélateur, lave-vaisselle</p>
+                            <p>Ustensiles, vaisselle et plats de cuisson</p>
+                            <p>Salle à manger</p>
+                        </div>
+                    </div>
+
+                    <div class="info js-accordeon">
+                        <div class="infos__title">
+                            <h4>Salle de bain</h4>
+                            <svg class="icon icon--lg">
+                                <use href="#icon-chevron-right"></use>
+                            </svg>
+                        </div>
+                        <div class="infos__content">
+                            <p>Salle de bain en verre avec double douche et baignoire séparée</p>
+                            <p>Laveuse et sécheuse</p>
+                            <p>Fer et planche à repasser</p>
+                            <p>Séchoir à cheveux</p>
+                            <p>Peignoirs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chambre__reservation" data-scrolly="fromLeft">
+                    <h4>à partir de 359,00 $</h4>
+
+                    <a class="button button-main button-white">Réserver maintenant</a>
+                </div>
+            </div>
+
+            <img src="assets/images/suite-appartement1.jpg" alt="suite-appartement" data-scrolly="fromBottom" />
+            <img class="grid-3" src="assets/images/suite-appartement2.jpg" alt="suite-appartement" data-scrolly="fromBottom" />
+            <img src="assets/images/suite-appartement3.jpg" alt="suite-appartement" data-scrolly="fromBottom" />
+            <img src="assets/images/suite-appartement4.jpg" alt="suite-appartement" data-scrolly="fromBottom" />
+            <img class="grid-6" src="assets/images/suite-appartement5.jpg" alt="suite-appartement" data-scrolly="fromBottom" />
+        </div>
+    </div>
+
+    <div class="swiper chambre__swiper" data-component="Carousel" data-autoplay data-loop data-slides="1.1" data-scrolly="fromBottom">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/suite-appartement1.jpg" alt="Photo suite-appartement" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/suite-appartement2.jpg" alt="Photo suite-appartement" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/suite-appartement3.jpg" alt="Photo suite-appartement" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/suite-appartement4.jpg" alt="Photo suite-appartement" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/suite-appartement5.jpg" alt="Photo suite-appartement" />
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="section contact section__dark">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Contact</h2>
+        <form action="" class="form" autocomplete="off" data-component="Form">
+            <div class="form__body">
+                <fieldset class="grid">
+                    <div class="columns" data-scrolly="fromLeft">
+                        <div class="input">
+                            <label class="input__label" for="firstname">Prénom</label>
+                            <input class="input__element" type="text" name="firstname" id="firstname" placeholder="ex: Elliot" required />
+                            <p class="text-error">Veuillez remplir ce champ</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="lastname">Nom</label>
+                            <input class="input__element" type="text" name="lastname" id="lastname" placeholder="ex: Schmit" required />
+                            <p class="text-error">Veuillez remplir ce champ</p>
+                        </div>
+                    </div>
+
+                    <div class="columns" data-scrolly="fromLeft">
+                        <div class="input">
+                            <label class="input__label" for="adress">Adresse</label>
+                            <input class="input__element" type="text" name="adress" id="adress" placeholder="ex: 140 rue Chambly" required />
+                            <p class="text-error">Veuillez remplir ce champ</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="postal">Code postal</label>
+                            <input class="input__element" type="text" name="postal" id="postal" placeholder="ex: D3B 5D2" required />
+                            <p class="text-error">Veuillez remplir ce champ</p>
+                        </div>
+                    </div>
+
+                    <div class="columns" data-scrolly="fromLeft">
+                        <div class="input">
+                            <label class="input__label" for="city">Ville</label>
+                            <input class="input__element" type="text" name="city" id="city" placeholder="ex: Longueuil" required />
+                            <p class="text-error">Veuillez remplir ce champ</p>
+                        </div>
+
+                        <div class="input select">
+                            <label class="input__label" for="province">Province</label>
+                            <select name="province" id="province" class="input__element" required>
+                                <option value="" hidden>Choisir une province</option>
+                                <option value="on">Ontario</option>
+                                <option value="al">Alberta</option>
+                                <option value="qc">Québec</option>
+                            </select>
+                            <p class="text-error">Veuillez sélectionner une option</p>
+                        </div>
+                    </div>
+
+                    <div class="input" data-scrolly="fromLeft">
+                        <label class="input__label" for="phone">Téléphone</label>
+                        <input
+                            class="input__element"
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="ex: 514 389 9203"
+                            pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s\.\-]?\d{3}[\s\.\-]?\d{4}$"
+                            required
+                        />
+                        <p class="text-error">Numéro non valide</p>
+                    </div>
+
+                    <div class="input" data-scrolly="fromLeft">
+                        <label class="input__label" for="email">Courriel</label>
+                        <input class="input__element" type="email" name="email" id="email" placeholder="ex: 2483880@cegepmontpetit.ca" required />
+                        <p class="text-error">Courriel non valide</p>
+                    </div>
+
+                    <div class="form__list" data-input-container data-scrolly="fromLeft">
+                        <p class="bold">Méthode préférée pour vous joindre</p>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="method[]" id="method1" value="courriel" required />
+                            <label class="input__label" for="method1">Courriel</label>
+                        </div>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="method[]" id="method2" value="courriel" required />
+                            <label class="input__label" for="method2">Téléphone</label>
+                        </div>
+                        <p class="text-error">Veuillez cocher une option</p>
+                    </div>
+
+                    <div class="input textarea u-grid-fullwidth" data-scrolly="fromLeft">
+                        <label class="input__label" for="comment">Autres informations pertinentes</label>
+                        <textarea class="input__element" name="comment" id="comment" maxlength="400" required></textarea>
+                        <p class="text-error">Veuillez remplir ce champ</p>
+                    </div>
+
+                    <div class="input checkbox" data-scrolly="fromLeft">
+                        <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" required />
+                        <label class="input__label" for="optin">J'accepte les conditions d'utilisations</label>
+                        <p class="text-error">Vous devez accepter les conditions d'utilisations</p>
+                    </div>
+                </fieldset>
+                <footer class="form__footer" data-scrolly="fromLeft">
+                    <button class="button button-tertiary">Envoyer</button>
+                </footer>
+            </div>
+
+            <div class="form__confirmation">
+                <p class="bold">Le formulaire a bien été envoyé.</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}

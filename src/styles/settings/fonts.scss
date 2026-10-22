@@ -1,0 +1,16 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Barlow', sans-serif; // titres
+    --font-secondary: 'Barlow', sans-serif; // corps de texte
+
+    --font-size-content: #{typo(13px, 16px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(48px, 74px)};
+    --font-size-h2: #{typo(24px, 27px)};
+    --font-size-h3: #{typo(18px, 20px)};
+    --font-size-h4: #{typo(13px, 15px)};
+}

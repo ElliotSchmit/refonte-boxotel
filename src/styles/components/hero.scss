@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Hero / Accueil
+   ========================================================================== */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.hero__swiper {
+    height: 100vh;
+    .swiper-pagination-bullets {
+        padding-bottom: 25px;
+    }
+}
+
+.hero__content {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        width: 75%;
+    }
+
+    .form {
+        width: fit-content;
+        align-self: center;
+        background-color: rgba($color: #1e1e1e, $alpha: 0.8);
+        padding: 5px 20px 10px;
+
+        .grid {
+            display: flex;
+        }
+    }
+}
+
+/* ==========================================================================
+   Hero / Suite-appartement
+   ========================================================================== */
+.hero__chambre {
+    height: 80vh;
+}
+
+.hero__chambre__content {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+    padding: 50px 0;
+
+    @media (width < $breakpoint-sm) {
+        justify-content: flex-end;
+    }
+}
+
+.chambre__media {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

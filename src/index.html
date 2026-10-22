@@ -1,0 +1,372 @@
+{% include "_partials/_header.html" %}
+
+<section class="hero">
+    <div class="swiper hero__swiper" data-component="Carousel" data-autoplay data-loop>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/hero1.jpg" alt="Photo Boxotel" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/hero2.jpg" alt="Photo Boxotel" />
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/hero3.jpg" alt="Photo Boxotel" />
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="wrapper">
+        <div class="hero__content">
+            <h1>Bien plus qu’une chambre d’hôtel</h1>
+
+            <form action="" class="form" autocomplete="off" data-component="Form">
+                <div class="form__body">
+                    <fieldset class="grid">
+                        <div class="input">
+                            <label class="input__label" for="date">Date du séjour</label>
+                            <input class="input__element" type="text" name="date" value="26/05/08 - 26/05/10" id="date" required />
+                        </div>
+
+                        <div class="input select">
+                            <label class="input__label" for="adults">Adultes</label>
+                            <select name="adults" id="adults" class="input__element" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <div class="input select">
+                            <label class="input__label" for="enfants">Enfants</label>
+                            <select name="enfants" id="enfants" class="input__element" required>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="promo">Code promo</label>
+                            <input class="input__element" type="text" name="promo" id="promo" placeholder="ex. : SJWA97S" />
+                        </div>
+                    </fieldset>
+
+                    <footer class="form__footer">
+                        <a
+                            href="https://secure.reservit.com/fo/booking/58/253704/availability?hotelid=253704&custid=58&specialMode=default&nbroom=1&fday=12&fmonth=05&fyear=2026&numnight=1&m=booking&roomAge1=40,40&discountCode=&langcode=en"
+                            class="button button-secondary"
+                        >
+                            Voir la disponibilité
+                        </a>
+                    </footer>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section bienvenue">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Bienvenue au boxotel !</h2>
+
+        <div class="cards cards__bienvenue" data-component="Accordeon">
+            <div class="card tiroir-card js-accordeon" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <div class="contenu">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-feuille"></use>
+                        </svg>
+                        <h3>Éco-responsable</h3>
+                    </div>
+
+                    <svg class="icon icon--lg icon--arrow">
+                        <use href="#icon-chevron-right"></use>
+                    </svg>
+                </div>
+                <div class="card__content">
+                    <h3>Éco-responsable</h3>
+                    <p>
+                        L’hôtel met l’accent sur les produits locaux et écologiques et mise sur la sous consommation, pour satisfaire une clientèle touristique
+                        consciencieuse mais exigeante au niveau de la qualité et du confort.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card tiroir-card js-accordeon" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <div class="contenu">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-map"></use>
+                        </svg>
+                        <h3>Emplacement central</h3>
+                    </div>
+
+                    <svg class="icon icon--lg icon--arrow">
+                        <use href="#icon-chevron-right"></use>
+                    </svg>
+                </div>
+                <div class="card__content">
+                    <h3>Emplacement central</h3>
+                    <p>
+                        Situé au cœur de Montréal dans le Quartier des Spectacles, Boxotel est l’emplacement idéal pour profiter des nombreux événements et
+                        festivals, tout en étant à distance de marches du métro et des divers quartiers et centre d’affaires montréalais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card tiroir-card js-accordeon" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <div class="contenu">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-maison"></use>
+                        </svg>
+                        <h3>Faites comme chez vous</h3>
+                    </div>
+
+                    <svg class="icon icon--lg icon--arrow">
+                        <use href="#icon-chevron-right"></use>
+                    </svg>
+                </div>
+                <div class="card__content">
+                    <h3>Faites comme chez vous</h3>
+                    <p>
+                        Boxotel vous propose luxe et confort avec ses mini-habitations toutes équipées, sa terrasse au toit et son propre spa, vous permettant
+                        de profiter pleinement de votre séjour.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card image-card" data-scrolly="fromBottom">
+                <img src="assets/images/hotel.jpg" alt="" class="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section__dark types">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Chambres</h2>
+        <p class="subtitle" data-scrolly="fromLeft">
+            Ici, ce sont les chambres qui s’adaptent au voyageur, et non l’inverse! Toutes les unités sont équipées de mobilier modulaire, système domotique,
+            ainsi que d’une cuisine complète comme à la maison. Que vous soyez à Montréal pour affaires ou plaisir, recréez votre espace selon vos envies!
+        </p>
+
+        <a href="suite-appartement.html" class="button button-tertiary" data-scrolly="fromLeft">Toutes les chambres</a>
+
+        <div class="swiper swiper__types" data-component="Carousel" data-split data-loop data-scrolly="fromBottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper__media"><img src="assets/images/studios.jpg" alt="Photo d'une forêt" /></div>
+                    <div class="swiper__content">
+                        <div class="titre">
+                            <h3>Studios</h3>
+                            <h3>À partir de 269,00 $</h3>
+                        </div>
+
+                        <p>
+                            Les studios Boxotel se divisent en trois catégories, offrant des surfaces de 260 pi2 (24m2) à 328 pi2 (30m2). Idéals pour des
+                            séjours courts ou longs, ils disposent de lits Queen ou King et peuvent accueillir deux personnes. Tous pourvus de larges baies
+                            vitrées, qui vous permettent de profiter un maximum de l’ensoleillement, certains offrent également un balcon.
+                        </p>
+
+                        <div class="infos">
+                            <a href="suite-appartement.html" class="button button-tertiary button-black">Voir plus</a>
+                            <p class="bold">À partir de 269,00$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__media"><img src="assets/images/lofts.jpg" alt="Photo d'une forêt" /></div>
+                    <div class="swiper__content">
+                        <div class="titre">
+                            <h3>Lofts</h3>
+                            <h3>À partir de 289,00 $</h3>
+                        </div>
+
+                        <p>
+                            Les lofts de l’hôtel se distinguent par leur superficie, de 360 pi2 (33m2) à 450 pi2 (42m2). Idéals pour tous types de séjours, ils
+                            disposent de lits Queen ou King et certains, équipés de sofas-lits, peuvent aussi accueillir des enfants. Plusieurs unités disposent
+                            d’une impressionnante baignoire dans la chambre, parfaite pour des séjours détente.
+                        </p>
+
+                        <div class="infos">
+                            <a href="suite-appartement.html" class="button button-tertiary button-black">Voir plus</a>
+                            <p class="bold">À partir de 289,00$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__media"><img src="assets/images/appartements.jpg" alt="Photo d'une forêt" /></div>
+                    <div class="swiper__content">
+                        <div class="titre">
+                            <h3>Appartements</h3>
+                            <h3>À partir de 349,00 $</h3>
+                        </div>
+
+                        <p>
+                            L’appartement est la plus luxueuse et la plus spacieuse des unités d’hébergement du Boxotel. Avec ses 530 p2 / 50 m2 répartis sur
+                            deux étages, sa terrasse privée et sa salle à manger, elle conviendra aux voyageurs qui cherchent un hôtel et une suite d’exception
+                            à Montréal.
+                        </p>
+
+                        <div class="infos">
+                            <a href="suite-appartement.html" class="button button-tertiary button-black">Voir plus</a>
+                            <p class="bold">À partir de 289,00$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section services">
+    <div class="wrapper">
+        <div class="services__content">
+            <h2 data-scrolly="fromLeft">Services</h2>
+
+            <div class="services__media-mobile" data-scrolly="fromBottom">
+                <div class="video" data-no-controls data-component="YouTube" data-video-id="iIXo_Xy4gwFlJB5E">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="assets/images/services.jpg" alt="Services" />
+
+                        <svg class="icon icon--stroke icon--xl">
+                            <use href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <p data-scrolly="fromLeft">
+                Parce que nous tenons à ce que vous viviez la meilleure expérience possible avec nous, nous mettrons tout en place pour garantir votre
+                bien-être. Découvrez nos services et contactez-nous pour tout besoin, il nous fera plaisir de vous aider!
+            </p>
+            <a href="#" class="button button-tertiary button-black" data-scrolly="fromLeft">Tous les services</a>
+        </div>
+        <div class="services__media">
+            <div class="video" data-no-controls data-component="YouTube" data-video-id="6FLPNe9Z2NY" data-scrolly="fromBottom">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/services.jpg" alt="Services" />
+
+                    <svg class="icon icon--xl">
+                        <use href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section__dark temoins">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Témoignages de trip advisor</h2>
+
+        <div class="cards">
+            <div class="card" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <svg class="icon icon--lg">
+                        <use href="#icon-guillemet"></use>
+                    </svg>
+                </div>
+
+                <div class="card__content">
+                    <p>
+                        « Nous avons séjourné 1 nuit dans cet hôtel au concept original. Nous avons adoré le design très soigné, le confort et les équipements
+                        parfaits. Le must : l'espace Spa au dernier étage avec le jacuzzi sur la terrasse.»
+                    </p>
+
+                    <p class="bold">- Les Tongs</p>
+                </div>
+            </div>
+
+            <div class="card" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <svg class="icon icon--lg">
+                        <use href="#icon-guillemet"></use>
+                    </svg>
+                </div>
+
+                <div class="card__content">
+                    <p>
+                        « Je voyage souvent à Montréal pour le travail et c'est ma nouvelle place préférée. Pendant notre séjour, nous nous sommes sentis très
+                        en sécurité par rapport à Covid. Toutes les précautions nécessaires sont prises. La cuisine est parfaite (et permet de manger facilement
+                        à l'intérieur en ces temps de pandémie). Je recommande Boxotel sans hésitation et je reviendrai! »
+                    </p>
+
+                    <p class="bold">- Wrow</p>
+                </div>
+            </div>
+
+            <div class="card" data-scrolly="fromBottom">
+                <div class="card__media">
+                    <svg class="icon icon--lg">
+                        <use href="#icon-guillemet"></use>
+                    </svg>
+                </div>
+
+                <div class="card__content">
+                    <p>
+                        « Venus pour notre lune de miel, on ne pouvait pas passer une meilleure semaine dans cet hôtel. Tous les services sont au top : chambres
+                        belles et très modernes, elles sont équipées de tout le nécessaire pour passer 1 nuit ou plusieurs semaines.»
+                    </p>
+
+                    <p class="bold">- Laetitia F</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.tripadvisor.ca/Hotel_Review-g155032-d11979196-Reviews-Boxotel-Montreal_Quebec.html" data-scrolly="fromLeft">
+            Voir plus sur trip advisor
+            <svg class="icon">
+                <use href="#icon-external-link"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+
+<section class="section emplacement">
+    <div class="wrapper">
+        <div class="emplacement__content">
+            <h2 data-scrolly="fromLeft">Emplacement idéal</h2>
+            <p data-scrolly="fromLeft">
+                Boxotel est situé dans le coeur festif et culturel de la ville, le quartier des spectacles. Il se trouve également à courte distance de marche
+                du Quartier Latin, Village Gai, et du Plateau Mont-Royal. Les stations de métro les plus proches sont Berri-Uqam et Saint Laurent. Une
+                localisation idéale pour explorer, relaxer ou travailler!
+            </p>
+        </div>
+
+        <img src="assets/images/carte.jpg" alt="Carte" class="emplacement__media" data-scrolly="fromBottom" />
+    </div>
+</section>
+
+<section class="section section__dark reservez">
+    <div class="wrapper">
+        <div class="reservez__content">
+            <h3 data-scrolly="fromLeft">Réservez maintenant</h3>
+            <p data-scrolly="fromLeft">Ne manquez pas votre chance et réservez maintenant!</p>
+            <a class="button button-main" data-scrolly="fromLeft">Réserver</a>
+        </div>
+
+        <div class="reservez__media" data-scrolly="fromBottom">
+            <div class="video" data-no-controls data-component="YouTube" data-video-id="4ZlApPzKarE">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/video-reserve.jpg" alt="réservez" />
+
+                    <svg class="icon icon--xl">
+                        <use href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}
